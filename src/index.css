@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient-y {
+  0%, 100% {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 120% 120%;
+    background-position: center;
+  }
+}
+
+.animate-gradient-y {
+  animation: gradient-y 15s ease infinite;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+}
+
+.font-comic {
+  font-family: 'Comic Neue', cursive;
+}
