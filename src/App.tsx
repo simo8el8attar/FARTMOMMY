@@ -20,7 +20,7 @@ function App() {
             {/* Title Image */}
             <div className="mb-6">
             <img
-  src="./src/images/FARTMOMMY.jpeg"
+  src="/images/FARTMOMMY.jpeg"
   alt="FARTMOMMY"
   className="w-60 mx-auto border-4 border-lime-300 shadow-xl animate-bounce object-contain"
 />
@@ -66,7 +66,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-lime-600 hover:bg-lime-700 text-white font-bold py-3 px-8 rounded-full flex items-center gap-2 transform hover:scale-105 transition-transform shadow-lg"
               >
-                <img className="w-6 h-6" src="./src/images/dex.png" />
+                <img className="w-6 h-6" src="/images/dex.png" />
                 DexScanner
               </a>
             </div>
@@ -98,7 +98,7 @@ function App() {
               rel="noopener noreferrer"
               className="bg-emerald-500 hover:bg-emerald-600 p-4 rounded-full transform hover:scale-110 transition-transform shadow-lg"
             >
-              <img className="w-10 h-10" src="./src/images/telegram.svg" />
+              <img className="w-10 h-10" src="/images/telegram.svg" />
             </a>
             <a
               href="https://t.me/FART_MOMMY"
@@ -106,7 +106,7 @@ function App() {
               rel="noopener noreferrer"
               className="bg-lime-500 hover:bg-lime-600 p-4 rounded-full transform hover:scale-110 transition-transform shadow-lg"
             >
-              <img className="w-10 h-10" src="./src/images/x.png" />
+              <img className="w-10 h-10" src="/images/x.png" />
             </a>
           </div>
         </div>
