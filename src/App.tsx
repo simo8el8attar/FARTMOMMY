@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Rocket, Copy, Twitter, MessageCircle } from 'lucide-react';
 
+// Import images from the `src/images` folder
+import fartMommyImage from './images/FARTMOMMY.jpeg';
+import telegramImage from './images/telegram.svg';
+import dexImage from './images/dex.png';
+import xImage from './images/x.png';
+
 function App() {
   const [copied, setCopied] = useState(false);
   const walletAddress = "5TaSR6RgfC4o7NNAW7ybYXEKCf9x6stZz7GCLnJ8pump";
@@ -19,12 +25,11 @@ function App() {
           <div className="relative z-10">
             {/* Title Image */}
             <div className="mb-6">
-            <img
-  src="/images/FARTMOMMY.jpeg"
-  alt="FARTMOMMY"
-  className="w-60 mx-auto border-4 border-lime-300 shadow-xl animate-bounce object-contain"
-/>
-
+              <img
+                src={fartMommyImage}
+                alt="FARTMOMMY"
+                className="w-60 mx-auto border-4 border-lime-300 shadow-xl animate-bounce object-contain"
+              />
             </div>
             <h1 className="text-7xl md:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 via-emerald-300 to-green-400 mb-4 animate-pulse">
               FARTMOMMY
@@ -66,7 +71,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-lime-600 hover:bg-lime-700 text-white font-bold py-3 px-8 rounded-full flex items-center gap-2 transform hover:scale-105 transition-transform shadow-lg"
               >
-                <img className="w-6 h-6" src="/images/dex.png" />
+                <img className="w-6 h-6" src={dexImage} />
                 DexScanner
               </a>
             </div>
@@ -98,7 +103,7 @@ function App() {
               rel="noopener noreferrer"
               className="bg-emerald-500 hover:bg-emerald-600 p-4 rounded-full transform hover:scale-110 transition-transform shadow-lg"
             >
-              <img className="w-10 h-10" src="/images/telegram.svg" />
+              <img className="w-10 h-10" src={telegramImage} />
             </a>
             <a
               href="https://t.me/FART_MOMMY"
@@ -106,7 +111,7 @@ function App() {
               rel="noopener noreferrer"
               className="bg-lime-500 hover:bg-lime-600 p-4 rounded-full transform hover:scale-110 transition-transform shadow-lg"
             >
-              <img className="w-10 h-10" src="/images/x.png" />
+              <img className="w-10 h-10" src={xImage} />
             </a>
           </div>
         </div>

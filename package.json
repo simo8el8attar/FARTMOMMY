@@ -4,15 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://simo8el8attar.github.io/FARTMOMMY",
-  "scripts": {
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "main -d build"
-  },
+"scripts": {
+  "dev": "vite",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "start": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+,
   "dependencies": {
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
